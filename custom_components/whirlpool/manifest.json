@@ -1,0 +1,20 @@
+{
+  "domain": "whirlpool",
+  "name": "Whirlpool Appliances",
+  "codeowners": [
+    "@mefbgil"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/mefbgil/home-assistant-whirlpool",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "loggers": [
+    "whirlpool"
+  ],
+  "quality_scale": "silver",
+  "requirements": [
+    "whirlpool_sixth_sense@git+https://github.com/mefbgil/whirlpool-sixth-sense.git@eb16c30"
+  ],
+  "version": "1.0.0",
+  "issue_tracker": "https://github.com/mefbgil/home-assistant-whirlpool/issues"
+}
