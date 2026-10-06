@@ -15,6 +15,6 @@
   "requirements": [
     "whirlpool_sixth_sense@git+https://github.com/mefbgil/whirlpool-sixth-sense.git@eb16c30"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "issue_tracker": "https://github.com/mefbgil/home-assistant-whirlpool/issues"
 }

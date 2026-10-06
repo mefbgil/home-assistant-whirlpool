@@ -4,20 +4,20 @@
   },
   "config": {
     "abort": {
-      "already_configured": "[%key:common::config_flow::abort::already_configured_account%]"
+      "already_configured": "Account is already configured"
     },
     "error": {
       "account_locked": "[%key:component::whirlpool::common::account_locked_error%]",
-      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
-      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
       "no_appliances": "No supported appliances found",
-      "unknown": "[%key:common::config_flow::error::unknown%]"
+      "unknown": "Unexpected error"
     },
     "step": {
       "reauth_confirm": {
         "data": {
           "brand": "[%key:component::whirlpool::config::step::user::data::brand%]",
-          "password": "[%key:common::config_flow::data::password%]",
+          "password": "Password",
           "region": "[%key:component::whirlpool::config::step::user::data::region%]"
         },
         "data_description": {
@@ -25,14 +25,14 @@
           "password": "[%key:component::whirlpool::config::step::user::data_description::password%]",
           "region": "[%key:component::whirlpool::config::step::user::data_description::region%]"
         },
-        "title": "[%key:common::config_flow::title::reauth%]"
+        "title": "Reauthenticate Whirlpool account"
       },
       "user": {
         "data": {
           "brand": "Brand",
-          "password": "[%key:common::config_flow::data::password%]",
+          "password": "Password",
           "region": "Region",
-          "username": "[%key:common::config_flow::data::username%]"
+          "username": "Username"
         },
         "data_description": {
           "brand": "The brand of the mobile app you use, or the brand of the appliances in your account",
@@ -89,7 +89,7 @@
           "convection_broil": "Convection broil",
           "convection_roast": "Convection roast",
           "keep_warm": "Keep warm",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_cook_mode_lower": {
@@ -102,7 +102,7 @@
           "convection_broil": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::convection_broil%]",
           "convection_roast": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::convection_roast%]",
           "keep_warm": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::keep_warm%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_cook_mode_upper": {
@@ -115,7 +115,7 @@
           "convection_broil": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::convection_broil%]",
           "convection_roast": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::convection_roast%]",
           "keep_warm": "[%key:component::whirlpool::entity::select::oven_cook_mode::state::keep_warm%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "refrigerator_temperature_level": {
@@ -141,7 +141,7 @@
           "factory_diagnostic_mode": "[%key:component::whirlpool::entity::sensor::washer_state::state::factory_diagnostic_mode%]",
           "hard_stop_or_error": "[%key:component::whirlpool::entity::sensor::washer_state::state::hard_stop_or_error%]",
           "life_test": "[%key:component::whirlpool::entity::sensor::washer_state::state::life_test%]",
-          "pause": "[%key:common::state::paused%]",
+          "pause": "Paused",
           "power_failure": "[%key:component::whirlpool::entity::sensor::washer_state::state::power_failure%]",
           "running_maincycle": "[%key:component::whirlpool::entity::sensor::washer_state::state::running_maincycle%]",
           "running_postcycle": "[%key:component::whirlpool::entity::sensor::washer_state::state::running_postcycle%]",
@@ -149,7 +149,7 @@
           "setting": "[%key:component::whirlpool::entity::sensor::washer_state::state::setting%]",
           "smart_delay": "[%key:component::whirlpool::entity::sensor::washer_state::state::smart_delay%]",
           "smart_grid_pause": "[%key:component::whirlpool::entity::sensor::washer_state::state::smart_delay%]",
-          "standby": "[%key:common::state::standby%]",
+          "standby": "Standby",
           "system_initialize": "[%key:component::whirlpool::entity::sensor::washer_state::state::system_initialize%]"
         }
       },
@@ -166,7 +166,7 @@
           "convection_broil": "Convection broil",
           "convection_roast": "Convection roast",
           "keep_warm": "Keep warm",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_cook_mode_lower": {
@@ -179,7 +179,7 @@
           "convection_broil": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::convection_broil%]",
           "convection_roast": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::convection_roast%]",
           "keep_warm": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::keep_warm%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_cook_mode_upper": {
@@ -192,7 +192,7 @@
           "convection_broil": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::convection_broil%]",
           "convection_roast": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::convection_roast%]",
           "keep_warm": "[%key:component::whirlpool::entity::sensor::oven_cook_mode::state::keep_warm%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_current_temperature": {
@@ -209,7 +209,7 @@
         "state": {
           "cooking": "Cooking",
           "preheating": "Preheating",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_state_lower": {
@@ -217,7 +217,7 @@
         "state": {
           "cooking": "[%key:component::whirlpool::entity::sensor::oven_state::state::cooking%]",
           "preheating": "[%key:component::whirlpool::entity::sensor::oven_state::state::preheating%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_state_upper": {
@@ -225,7 +225,7 @@
         "state": {
           "cooking": "[%key:component::whirlpool::entity::sensor::oven_state::state::cooking%]",
           "preheating": "[%key:component::whirlpool::entity::sensor::oven_state::state::preheating%]",
-          "standby": "[%key:common::state::standby%]"
+          "standby": "Standby"
         }
       },
       "oven_target_temperature": {
@@ -255,7 +255,7 @@
           "factory_diagnostic_mode": "Factory diagnostic mode",
           "hard_stop_or_error": "Hard stop or error",
           "life_test": "Life test",
-          "pause": "[%key:common::state::paused%]",
+          "pause": "Paused",
           "power_failure": "Power failure",
           "running_maincycle": "Running maincycle",
           "running_postcycle": "Running postcycle",
@@ -263,7 +263,7 @@
           "setting": "Setting",
           "smart_delay": "Smart delay",
           "smart_grid_pause": "[%key:component::whirlpool::entity::sensor::washer_state::state::smart_delay%]",
-          "standby": "[%key:common::state::standby%]",
+          "standby": "Standby",
           "system_initialize": "System initialize"
         }
       },
@@ -273,8 +273,8 @@
           "25": "25%",
           "50": "50%",
           "100": "100%",
-          "active": "[%key:common::state::active%]",
-          "empty": "[%key:common::state::empty%]",
+          "active": "Active",
+          "empty": "Empty",
           "unknown": "Unknown"
         }
       },
@@ -363,10 +363,10 @@
       "message": "Failed to fetch appliances"
     },
     "cannot_connect": {
-      "message": "[%key:common::config_flow::error::cannot_connect%]"
+      "message": "Failed to connect"
     },
     "invalid_auth": {
-      "message": "[%key:common::config_flow::error::invalid_auth%]"
+      "message": "Invalid authentication"
     },
     "invalid_value_set": {
       "message": "Invalid value provided"
