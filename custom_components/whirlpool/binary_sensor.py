@@ -85,11 +85,6 @@ REFRIGERATOR_BINARY_SENSORS: tuple[WhirlpoolBinarySensorEntityDescription, ...] 
         value_fn=lambda refrigerator: refrigerator.get_max_ice(),
     ),
     WhirlpoolBinarySensorEntityDescription(
-        key="vacation_mode",
-        translation_key="vacation_mode",
-        value_fn=lambda refrigerator: refrigerator.get_vacation_mode(),
-    ),
-    WhirlpoolBinarySensorEntityDescription(
         key="control_lock",
         translation_key="control_lock",
         value_fn=lambda refrigerator: refrigerator.get_control_lock(),

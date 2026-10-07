@@ -8,9 +8,9 @@ and tested with the Whirlpool WRFC7036RZ refrigerator.
 
 ## Refrigerator support
 
-The refrigerator implementation is intentionally read-only. It exposes
-available appliance state to Home Assistant but does not provide controls
-that can change refrigerator settings.
+The refrigerator implementation exposes appliance state to Home Assistant
+and provides control for capabilities that have been implemented and
+validated against physical hardware.
 
 Depending on appliance capabilities, entities include:
 
@@ -20,7 +20,7 @@ Depending on appliance capabilities, entities include:
 - Refrigerator, freezer, and pantry door states
 - Freezer and icebox ice-maker states
 - Max Cool and Max Ice status
-- Vacation mode
+- Vacation mode switch
 - Control lock
 - Sabbath mode
 - Quiet mode
@@ -28,6 +28,10 @@ Depending on appliance capabilities, entities include:
 - Ice type
 - Door alarm
 - Power-outage alarms
+
+Vacation Mode can be enabled and disabled directly from Home Assistant.
+The control was developed and physically validated with the Whirlpool
+WRFC7036RZ refrigerator.
 
 ## Installation
 

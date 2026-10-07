@@ -13,8 +13,8 @@
   ],
   "quality_scale": "silver",
   "requirements": [
-    "whirlpool_sixth_sense@git+https://github.com/mefbgil/whirlpool-sixth-sense.git@eb16c30"
+    "whirlpool_sixth_sense@git+https://github.com/mefbgil/whirlpool-sixth-sense.git@cbfaa41"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "issue_tracker": "https://github.com/mefbgil/home-assistant-whirlpool/issues"
 }

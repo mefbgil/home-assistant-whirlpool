@@ -338,9 +338,6 @@
       "max_ice": {
         "name": "Max ice"
       },
-      "vacation_mode": {
-        "name": "Vacation mode"
-      },
       "control_lock": {
         "name": "Control lock"
       },
@@ -352,6 +349,11 @@
       },
       "water_filter_overdue": {
         "name": "Water filter overdue"
+      }
+    },
+    "switch": {
+      "vacation_mode": {
+        "name": "Vacation mode"
       }
     }
   },
